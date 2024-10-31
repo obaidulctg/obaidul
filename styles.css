@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .section {
+    padding: 2em;
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+  }
+  .navbar a {
+    color:yellow;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  /* Mode Styling */
+  .light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  .dark-mode {
+    background-color: #222;
+    color: #ddd;
+  }
+  .reading-mode {
+    background-color: #fffbdd;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 5em 0;
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  input, textarea {
+    padding: 10px;
+    border: 1px solid chocolate;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #2575fc;
+  }
+  
+  /* Social Links */
+  .social-links a {
+    margin: 10px;
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .footer-links a, .footer-social a {
+    margin: 5px;
+    color: #6a11cb;
+    text-decoration: none;
+  }
+  .footer-bottom {
+    margin-top: 1em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      width: 80%;
+    }
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
